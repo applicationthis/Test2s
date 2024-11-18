@@ -1,0 +1,57 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <!-- Step Counter Text -->
+    <TextView
+        android:id="@+id/stepCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steps: 0"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"/>
+
+    <!-- Go to Jogging Button -->
+    <Button
+        android:id="@+id/joggingButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Go to Jogging"
+        android:textSize="18sp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:elevation="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/stepCountTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:drawableLeft="@android:drawable/ic_media_play"
+        android:drawablePadding="10dp"/>
+
+    <!-- Go to Push Ups Button -->
+    <Button
+        android:id="@+id/joggingButton1"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Go to Push Ups"
+        android:textSize="18sp"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:elevation="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/joggingButton"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@android:drawable/ic_media_pause"
+        android:drawablePadding="10dp"/>
+
+</RelativeLayout>

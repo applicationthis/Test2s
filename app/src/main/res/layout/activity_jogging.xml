@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Timer Display -->
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time: 00:00"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold" />
+
+    <!-- Steps Counter -->
+    <TextView
+        android:id="@+id/stepCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steps: 0"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:layout_below="@id/timerTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+    <!-- Calories Burned -->
+    <TextView
+        android:id="@+id/caloriesBurnedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories: 0"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:layout_below="@id/stepCountTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/startTimerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Start Jogging"
+        android:layout_below="@id/caloriesBurnedTextView"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:elevation="5dp"
+        android:textSize="16sp" />
+
+    <!-- Stop Button -->
+    <Button
+        android:id="@+id/stopTimerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Stop Jogging"
+        android:layout_below="@id/caloriesBurnedTextView"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#F44336"
+        android:textColor="#FFFFFF"
+        android:elevation="5dp"
+        android:textSize="16sp" />
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Reset"
+        android:layout_below="@id/caloriesBurnedTextView"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:elevation="5dp"
+        android:textSize="16sp" />
+
+</RelativeLayout>
